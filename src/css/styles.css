@@ -32,3 +32,17 @@ span {
  font-size: 80px;
  padding: 5px 0;
 }
+.deadline-message{
+    display: none;
+    font-size: 24px;
+    font-style: italic;
+    color: white;
+  }
+   
+  .visible{
+    display: block;
+  }
+   
+  .hidden{
+    display: none;
+  }
