@@ -13,13 +13,13 @@ const secsRef = timerRef.querySelector('span[data-value="secs"]');
 
 
 setInterval(()=>{
-   // if (secs===0 && mins===0 && hours===0 && days===0) {
-   //    document.getElementById("countdown").className = "hidden";
-   //    document.getElementById("deadline-message").className = "visible";
-   //    document.getElementById("timer-1").className = "hidden";
-   //    clearInterval(date);
-   //    return true;
-   // }
+   if (secs===0 && mins===0 && hours===0 && days===0) {
+      document.getElementById("countdown").className = "hidden";
+      document.getElementById("deadline-message").className = "visible";
+      document.getElementById("timer-1").className = "hidden";
+      clearInterval(date);
+      return true;
+   }
     const time = date.targetDate - Date.now();
 
     
